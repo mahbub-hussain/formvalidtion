@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Form Validation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <link rel="icon" href="images/fav.png" type="image/png" sizes="16x16">
+     <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    
+     
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/bootstrap.css" >
+      <!--custom css-->
+     <link rel="stylesheet" href="main.css">
+  </head>
+<body>
+
+     <header>
+           <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-12 text-center">
+                        <h2>complete form with bootstrap</h2>
+                        <h2>Validation by jquery </h2>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+         </div>
+    </header>
+
+    <!--form-container start from here-->
+    
+    <section id="form-container">
+          <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="col-xl-8">
+                        <form>
+                              <div class="form-row">
+                                      <div class="form-group col-md-6"> 
+
+                                        <span class="check-icon"><i class=" fas fa-thumbs-up"></i></span>
+
+                                        <input type="text" class="form-control float-label"  id="firstname" required>  
+
+                                        <small class="form-text">
+                                                 *(3-30) character only 
+                                                <span class="error-icon"><i class=" fas fa-exclamation-circle"></i></span>
+                                        </small>
+
+                                        <label for="firstname">Enter your Firstname</label>
+                                       
+                                      </div>
+                                    
+                                      
+                                      <div class="form-group col-md-6">
+                                        
+                                          <span class="check-icon"><i class=" fas fa-thumbs-up"></i></span>
+
+                                          <input type="text" class="form-control float-label" id="lastname" required>
+
+                                          <small class="form-text">
+                                            *(3-30) character only 
+                                              <span class="error-icon"><i class=" fas fa-exclamation-circle"></i></span>
+                                          </small>
+
+                                          <label for="lastname">Enter your Lastname</label>
+                                        
+                                      </div>
+
+                                      <div class="form-group col-md-6">
+                                          
+                                          <span class="check-icon"><i class=" fas fa-check"></i></span>
+
+                                          <input type="text" class="form-control float-label" id="username" required>
+
+                                          <small class="form-text">
+                                              *Ex:( <span style="color:red">name Or name_44 Or name4-44 , Or user_name</span>  )(6-30)
+                                              <span class="error-icon"><i class=" fas fa-exclamation-circle"></i></span>
+                                          </small>
+
+                                          <label for="username">Enter Your username</label>
+                                      </div>
+
+                                      <div class="form-group col-md-6">
+
+                                        <span class="check-icon"><i class=" fas fa-check"></i></span>
+                                        
+                                        <input class="form-control float-label" type="password" id="password" required>
+
+                                        <small class="form-text">
+                                            6-20 character allowed
+                                            <span class="error-icon"><i class=" fas fa-exclamation-circle"></i></span>
+                                        </small>
+                                         <span id="passvisivility"><i id="eye-toggle" class="fas fa-eye-slash" class="  fas fa-eye"></i></span>
+                                        <label for="password">choose your Password</label>
+                                      </div>
+
+                                      <div class="form-group col-md-6">
+
+                                        <span class="check-icon"><i class=" fas fa-check"></i></span>
+
+                                        <input type="password" class="form-control float-label" id="password2">
+
+                                        <small class="form-text">
+                                          Both password must be same
+                                            <span class="error-icon"><i class=" fas fa-exclamation-circle"></i></span>
+                                        </small>
+
+                                        <label for="password2">Confrim Password</label>
+                                      </div>
+                                      
+                                      <div class="form-group col-md-6">
+
+                                          <span class="check-icon"><i class=" fas fa-check"></i></span>
+
+                                          <input type="tel" class="form-control float-label" id="tel" required>
+
+                                          <small class="form-text">
+                                              only number allowed (11-14)
+                                              <span class="error-icon"><i class=" fas fa-exclamation-circle"></i></span>
+                                          </small>
+
+                                          <label for="tel">Mobile</label>
+                                      </div>
+                                      <div class="form-group col-md-6">
+
+                                           <span class="check-icon"><i class=" fas fa-check"></i></span>
+
+                                           <input type="email" class="form-control float-label" id="email" required>
+
+                                           <small class="form-text">
+                                              please enter a valid email address
+                                              <span class="error-icon"><i class=" fas fa-exclamation-circle"></i></span>
+                                          </small>
+
+                                           <label for="email">enter your Email</label>
+                                           
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                        <input type="date" class="form-control" id="birthday" required>
+                                        <label for="birthday">Birthday</label>
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                        <label class="custom-file form-control">
+                                           <input  type="file" id="file" class="custom-file-input ">
+                                        </label>
+                                      </div>   
+                                     
+                                      <div class="form-group col-md-6">
+                                        <div class="form-control">
+                                           <legend>Gender: </legend>
+                                          <div class="custom-control custom-radio custom-control-inline float-right">
+                                              <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                              <label class="custom-control-label" for="customRadioInline1">Female</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline float-right">
+                                              <input type="radio" id="customRadioInline2" checked name="customRadioInline1" class="custom-control-input">
+                                              <label class="custom-control-label " for="customRadioInline2">Male</label>
+                                            </div>
+                                        </div>
+                                         
+                                      </div>
+                                      <div class="form-group col-md-12">
+                                            <div class="form-row">
+                                                <div class="col-md-5 pb-2">
+                                                  <select class="custom-select form-control">
+                                                    <option selected>City</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                  </select>
+                                                  </div>
+                                                  <div class="col-md-4 pb-2">
+                                                    <input type="text" class="form-control" placeholder="State">
+                                                  </div>
+                                                  <div class="col-md-3">
+                                                    <input type="text" class="form-control" placeholder="Zip">
+                                                  </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-md-12">
+                                            <textarea class="form-control float-label" required id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <label for="exampleFormControlTextarea1">type your massage</label>
+                                          </div>
+                                          <div class="form-group col-md-12">
+                                              <div class="form-check form-control border-0">
+                                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required >
+                                                <label class="form-check-label" for="invalidCheck">
+                                                  Agree to terms and conditions
+                                                </label>
+                                                <div class="invalid-feedback">
+                                                  You must agree before submitting.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            
+                                        <div class="form-group col-md-12">
+                                            <div class="form-row">
+                                              <button type="submit" id="submit" class="btn btn-primary m-auto">Submit</button></div>
+                                        </div>           
+                              </div>
+                        </form>
+                      </div>
+                  </div>
+          </div>
+    </section>
+    <!--form-container end from here-->
+
+ 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->  
+    <script src="js/jquery-3.2.1.slim.min.js"></script> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--custom js-->
+    <script src="main.js"></script>
+   
+</body>
+
+</html>

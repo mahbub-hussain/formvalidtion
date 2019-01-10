@@ -1,0 +1,186 @@
+header{
+ 
+    background: #dedede;
+    color: #63a2a5;
+    padding: 20px;
+}
+
+
+h2 {
+    letter-spacing: 4px;
+    font-size: 2.5vw;
+    text-transform: capitalize;
+}
+
+
+#form-container {
+    background: #ececec;
+    padding: 30px 0;
+    width: 88vw;
+    margin: auto;
+}
+
+.form-group{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.form-control{
+    border: 2px solid lightgray;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    
+    border:2px solid #80bdff;
+}
+
+.form-text{
+    display: none;
+    background: gainsboro;
+    width: 98%;
+    left: -7px;
+    z-index: 1;
+    padding: 6px;
+    border-radius: 5px;
+    color: navy;
+    position: absolute;
+    text-transform: capitalize;
+   
+}
+.form-text::before{
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 10px solid gainsboro;
+    border-right: 14px solid transparent;
+    top: -11px;
+    transform: rotate(-90deg);
+    left: 27px;
+}
+label{
+    position: absolute;
+    margin-bottom: 0;
+    top: 6px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+input[type="date"]{
+    padding-left: 50%;
+    text-transform: uppercase;
+}
+.custom-file{
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.custom-file-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.custom-file::before{
+    content:"Choose File...";
+    
+}
+.custom-file::after{
+    content: "browser";
+    background: #d8d8d8;
+    display: inline-block;
+    width: 70px;
+    position: absolute;
+    right: 0px;
+    height: 36px;
+    padding-top: 5px;
+    padding-left: 7px;
+    top: 0;
+}
+
+
+legend{
+    margin-bottom:0;
+    font-size: 1rem;
+    width: 50px;
+    float: left;
+}
+
+
+.custom-control-label {
+    top: 0;
+    cursor: pointer;
+}
+textarea label,
+ label{
+    left:20px;
+    padding: 0 4px;
+    background: white;
+    cursor:text;
+    color:darkcyan;
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+textarea:valid~label,
+textarea:focus~label,
+label.stay,
+input.float-label:focus~label{
+    top:-10px;
+    font-size: 14px;
+    color:#0177f7;;
+}
+.thrive{
+    border:2px solid lightgreen;
+}
+.thrive:focus{
+    border:2px solid lightgreen;
+}
+
+
+.not-thrive:focus{
+    border:2px solid red;
+}
+.not-thrive{
+    border:2px solid red;
+}
+
+
+.error-icon {
+    position: absolute;
+    right: 0px;
+    top: -33px;
+    float: right;
+    color: red;
+    animation-name: error-icon-Ani;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes error-icon-Ani{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.check-icon{
+    display: none;
+    position: absolute;
+    right: 17px;
+    float: right;
+    top: 8px;
+    font-size: 13px;
+    color: cornflowerblue;
+}
+
+#passvisivility {
+    position: absolute;
+    right: 38px;
+    top: 8px;
+    cursor: pointer;
+    color: darkgray;
+}
