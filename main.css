@@ -67,7 +67,7 @@ label{
     text-transform: capitalize;
 }
 input[type="date"]{
-    padding-left: 50%;
+    text-align:end;
     text-transform: uppercase;
 }
 .custom-file{
@@ -109,8 +109,12 @@ legend{
 
 .custom-control-label {
     top: 0;
+    left:0;
     cursor: pointer;
 }
+.custom-control-inline{
+    margin-right:0;}
+    
 textarea label,
  label{
     left:20px;
